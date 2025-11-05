@@ -1,0 +1,12 @@
+# service.yaml
+apiVersion: v1
+kind: Service
+metadata:
+  name: hello-app-service
+spec:
+  type: ClusterIP
+  selector:
+    app: hello-app # Deve bater com o label do Deployment
+  ports:
+  - port: 8080 # Porta que o Service expõe
+    targetPort: 80 # Porta que o contêiner escuta (do Dockerfile)
