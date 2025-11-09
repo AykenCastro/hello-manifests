@@ -17,6 +17,6 @@ spec:
       - name: hello-app
         # ATENÇÃO: Coloque seu usuário do Docker Hub aqui!
         # O 'initial' será substituído pela GitHub Action
-        image: aykencastro/hello-app:3a9432f9e824c92cc97ee70b8547e643c2383d4d
+        image: aykencastro/hello-app:563a8ea0dbe2899433a98dc4d429890e273450f6
         ports:
         - containerPort: 80
